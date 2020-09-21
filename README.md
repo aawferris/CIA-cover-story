@@ -73,7 +73,7 @@ Sample:
 ## Wireframes
 
   
-![Desktop Style:](https://www.figma.com/file/h1bh0trUq1v5T83cayb9ZT/CIA-Cover-Story?node-id=0%3A1)
+![Desktop Style:](https://drive.google.com/file/d/1oQT-w1y32NejydhGDcYkxXnLC6smrpnp/view?usp=sharing)
 Small Screen Style: https://www.figma.com/file/qLwaRdc7WQCTdyWX6EB57f/CIA-Cover-Story-Mobile?node-id=0%3A1
 
 ### MVP/PostMVP  
