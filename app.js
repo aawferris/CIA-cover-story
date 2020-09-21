@@ -1,13 +1,14 @@
 // global scope // 
 const button = document.querySelector('button')
 const personDisplay = document.querySelector('#info-box') // storing his id as a var
-const url = 'https://pipl.ir/v1/getPerson?0x0A5CC1C69997CEF6'
+const personUrl = 'https://pipl.ir/v1/getPerson?0x0A5CC1C69997CEF6'
+const quoteUrl = 'https://api.adviceslip.com/advice'
 
 button.addEventListener('click',
   async function getData() {
     removeInfo()
     try {
-      const response = await axios.get(url)
+      const response = await axios.get(personUrl)
       console.log(response.data.person);
       const data = Object.keys(response.data.person.personal)
       console.log(data);
@@ -18,18 +19,21 @@ button.addEventListener('click',
         let lastName = response.data.person.personal.last_name
         name.innerHTML = `Name: ${firstName, lastName}`
         document.querySelector('#info-box').append(`Name: ${firstName}  ${lastName}
+        
         `)
 
         const howOld = document.createElement('p')
         let age = response.data.person.personal.age
         howOld.innerHTML = `Age: ${age}`
         document.querySelector('#info-box').append(`Age: ${age}
+        
         `)
 
         const birthPlace = document.createElement('p')
         let pob = response.data.person.personal.born_place
         birthPlace.innerHTML = `Place of Birth: ${pob}`
         document.querySelector('#info-box').append(`Place of Birth: ${pob}
+        
         `)
 
         const currentLocation = document.createElement('p')
@@ -37,24 +41,28 @@ button.addEventListener('click',
         let currentCountry = response.data.person.personal.country
         currentLocation.innerHTML = `Current Location: ${currentCity}, ${currentCountry}`
         document.querySelector('#info-box').append(`Current Location: ${currentCity}, ${currentCountry}
+        
         `)
 
         const fatherName = document.createElement('p')
         let dad = response.data.person.personal.father_name
         fatherName.innerHTML = `Father's Name: ${dad}`
         document.querySelector('#info-box').append(`Father's Name: ${dad}
+        
         `)
 
         const bloodType = document.createElement('p')
         let blood = response.data.person.personal.blood
         bloodType.innerHTML = `Blood Type: ${blood}`
         document.querySelector('#info-box').append(`Blood Type: ${blood}
+        
         `)
 
         const religion = document.createElement('p')
         let dios = response.data.person.personal.religion
         religion.innerHTML = `Religion: ${dios}`
         document.querySelector('#info-box').append(`Religion: ${dios}
+        
         `)
 
         const family = document.createElement('p')
@@ -64,21 +72,52 @@ button.addEventListener('click',
         family.innerHTML = `Married? ${married} Spouse Name: ${spouse} Number of Children: ${children}`
         document.querySelector('#info-box').append(`Married? ${married}
         Spouse Name: ${spouse}
-        Number of Children: ${children}`)
+        Number of Children: ${children}
+        
+        `)
 
         const education = document.createElement('p')
         let cert = response.data.person.education.certificate
         let uni = response.data.person.education.university
         education.innerHTML = `Education: ${cert} from ${uni}`
         document.querySelector('#info-box').append(`Education: ${cert} from ${uni}
+        
         `)
 
+        const email = document.createElement('p')
+        let netMail = response.data.person.online_info.email
+        let userName = response.data.person.online_info.username
+        let password = response.data.person.online_info.password
+        email.innerHTML = `Email Address: ${netMail} and your username is Username: ${userName} and your password is Password: ${password}`
+        document.querySelector('#info-box').append(`Email Address: ${netMail} 
+        Username is Username: ${userName} 
+        Password is Password: ${password}
+        
+        `)
 
+        const workInfo = document.createElement('p')
+        let whereWork = response.data.person.work.country_code
+        let position = response.data.person.work.position
+        let salary = response.data.person.work.salary
+        let insurance = response.data.person.work.insurance
 
+        workInfo.innerHTML = `You work in ${whereWork} as a ${position} and make ${salary}.  Insurance? ${insurance}`
+        document.querySelector('#info-box').append(`You work in ${whereWork} 
+        Position: ${position} 
+        Annual Salary: ${salary} 
+        Insurance? ${insurance}
+        
+        `)
       }
       personalInfo()
     } catch (error) {
       console.log(`Error::: ${error}`);
+    }
+
+    try {
+
+    } catch (error) {
+
     }
   })
 
