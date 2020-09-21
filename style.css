@@ -1,22 +1,84 @@
-/* body
+ body {
+  font-family: 'Julius Sans One', sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+ }
 
-header
+header {
+  /* border: 2px solid black; */
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+}
 
-.container
+.container {
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px auto;
+}
 
-section
+#logo {
+  max-width: 100px;
+  height: auto;
+  align-items: center;
+  margin-left: 39%;
+}
 
-#header-container
+section {
+  /* border: 2px solid black; */
+}
 
-h1
+#header-container {
+  /* border: 2px solid black; */
+}
 
-p
+h1 {
+  /* border: 2px solid black; */
+  order: -1;
+  margin: 10px 15px;
+}
 
-button
+#header-p {
+  /* border: 2px solid black; */
+  font-style: italic;
+}
 
-#photo-avatar
+button {
+  /* border: 2px solid black; */
+  order: 1;
+  margin: 25px auto;
+  background-color: rgba(0, 102, 255, 0.3);
+  font-size: 14px;
+  font-weight: 400;
+}
 
-img
+p {
+  /* border: 2px solid black; */
+}
 
-#info-box
- */
+#info-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#photo-avatar {
+  /* border: 2px solid black; */
+}
+
+#avatar {
+  max-width: 100px;
+  height: auto;
+}
+
+#info-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid red;
+  width: 100%;
+  margin: auto 10px;
+}

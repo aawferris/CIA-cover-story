@@ -112,11 +112,11 @@ Link to visual Priority Matrix: https://www.figma.com/file/SDlWBpKytroJ4Vuc5YTa4
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | HTML Structure | M | 1hr | 15m | 15m |
-| Basic CSS | M | 1h| ---- | ---- |
+| Basic CSS | M | 1h| 1hr | 1hr |
 | API Linking | H | 3hrs| ---- | ---- |
 | Appending JS to DOM | H | 3hrs| ---- | ---- |
 | Event Listeners | H | 3hrs| ---- | ---- |
-| Clearing the page funtion | H | 1hr| ---- | ---- |
+| Clearing the page function | H | 1hr| ---- | ---- |
 | Additional CSS | M | 3hrs| ---- | ---- |
 | Post MVPs | L | 5hrs| ---- | ---- |
 | Debugging | H | 11hrs| ---- | ---- |
