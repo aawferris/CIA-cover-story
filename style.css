@@ -105,12 +105,15 @@ button {
 }
 
 #info-box {
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
   margin: auto 10px;
+  white-space: pre-line;
 }
 
+/* HOW DO I MAKE THE P TAGS STACK ON TOP OF EACH OTHER?? */
 #info-box.p {
   padding: 5px;
 }

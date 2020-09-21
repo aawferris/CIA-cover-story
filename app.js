@@ -17,23 +17,62 @@ button.addEventListener('click',
         let firstName = response.data.person.personal.name
         let lastName = response.data.person.personal.last_name
         name.innerHTML = `Name: ${firstName, lastName}`
-        document.querySelector('#info-box').append(`Name: ${firstName}  ${lastName}`)
+        document.querySelector('#info-box').append(`Name: ${firstName}  ${lastName}
+        `)
 
         const howOld = document.createElement('p')
         let age = response.data.person.personal.age
         howOld.innerHTML = `Age: ${age}`
-        document.querySelector('#info-box').append(`Age: ${age}`)
+        document.querySelector('#info-box').append(`Age: ${age}
+        `)
 
         const birthPlace = document.createElement('p')
         let pob = response.data.person.personal.born_place
         birthPlace.innerHTML = `Place of Birth: ${pob}`
-        document.querySelector('#info-box').append(`Place of Birth: ${pob}`)
+        document.querySelector('#info-box').append(`Place of Birth: ${pob}
+        `)
 
         const currentLocation = document.createElement('p')
         let currentCity = response.data.person.personal.city
         let currentCountry = response.data.person.personal.country
         currentLocation.innerHTML = `Current Location: ${currentCity}, ${currentCountry}`
-        document.querySelector('#info-box').append(`Current Location: ${currentCity}, ${currentCountry}`)
+        document.querySelector('#info-box').append(`Current Location: ${currentCity}, ${currentCountry}
+        `)
+
+        const fatherName = document.createElement('p')
+        let dad = response.data.person.personal.father_name
+        fatherName.innerHTML = `Father's Name: ${dad}`
+        document.querySelector('#info-box').append(`Father's Name: ${dad}
+        `)
+
+        const bloodType = document.createElement('p')
+        let blood = response.data.person.personal.blood
+        bloodType.innerHTML = `Blood Type: ${blood}`
+        document.querySelector('#info-box').append(`Blood Type: ${blood}
+        `)
+
+        const religion = document.createElement('p')
+        let dios = response.data.person.personal.religion
+        religion.innerHTML = `Religion: ${dios}`
+        document.querySelector('#info-box').append(`Religion: ${dios}
+        `)
+
+        const family = document.createElement('p')
+        let married = response.data.person.marriage.married
+        let spouse = response.data.person.marriage.spouse_name
+        let children = response.data.person.marriage.children
+        family.innerHTML = `Married? ${married} Spouse Name: ${spouse} Number of Children: ${children}`
+        document.querySelector('#info-box').append(`Married? ${married}
+        Spouse Name: ${spouse}
+        Number of Children: ${children}`)
+
+        const education = document.createElement('p')
+        let cert = response.data.person.education.certificate
+        let uni = response.data.person.education.university
+        education.innerHTML = `Education: ${cert} from ${uni}`
+        document.querySelector('#info-box').append(`Education: ${cert} from ${uni}
+        `)
+
 
 
       }
