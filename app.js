@@ -9,9 +9,9 @@ button.addEventListener('click',
     removeInfo()
     try {
       const response = await axios.get(personUrl)
-      console.log(response.data.person);
+      // console.log(response.data.person);
       const data = Object.keys(response.data.person.personal)
-      console.log(data);
+      // console.log(data);
 
       function personalInfo() {
         const name = document.createElement('p')
@@ -114,11 +114,23 @@ button.addEventListener('click',
       console.log(`Error::: ${error}`);
     }
 
-    try {
+    async function getQuote() {
+      try {
+        const response = await axios.get(quoteUrl)
+        // console.log(response);
+        const data = response.data.slip.advice
+        // console.log(data);
 
-    } catch (error) {
+        const myQuote = document.createElement('p')
+        let quote = data
+        myQuote.innerHTML = `${quote}`
+        document.querySelector('#info-box').append(`That one quote your known for is: "${quote}".`)
 
+      } catch (error) {
+        console.log(`QUOTE Error::: ${error}`);
+      }
     }
+    getQuote()
   })
 
 
