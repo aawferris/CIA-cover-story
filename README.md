@@ -100,7 +100,8 @@ Small Screen Style: https://www.figma.com/file/qLwaRdc7WQCTdyWX6EB57f/CIA-Cover-
 
 ## Priority Matrix
 
-Link to Google Drive Doc: https://docs.google.com/document/d/1nfPJpKWynI5MH7tcn2VVOlr80eXgz8dHsetRB3Iuxuo/edit?usp=sharing
+Link to Covey-Style Priority Matrix: https://docs.google.com/document/d/1nfPJpKWynI5MH7tcn2VVOlr80eXgz8dHsetRB3Iuxuo/edit?usp=sharing
+Link to visual Priority Matrix: https://www.figma.com/file/SDlWBpKytroJ4Vuc5YTa4k/Priority-Matrix?node-id=0%3A1
 
 ## Timeframes
 
