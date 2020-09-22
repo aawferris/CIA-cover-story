@@ -97,9 +97,9 @@ Small Screen Style: https://www.figma.com/file/qLwaRdc7WQCTdyWX6EB57f/CIA-Cover-
 |---|---| ---|
 |Sept 18-21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Sept 21| Project Approval and Subsequent HTML Framing | Incomplete
-|Sept 22| Basic CSS Styling and JS | Incomplete
-|Sept 23| MVP | Incomplete
-|Sept 24| Post MVP/Styling | Incomplete
+|Sept 22| Basic CSS Styling and JS | Complete
+|Sept 23| MVP | Complete
+|Sept 24| Post MVP/Styling | Complete
 |Sept 25| Presentations | Incomplete
 
 ## Priority Matrix
@@ -112,19 +112,29 @@ Link to visual Priority Matrix: https://www.figma.com/file/SDlWBpKytroJ4Vuc5YTa4
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | HTML Structure | M | 1hr | 15m | 15m |
-| Basic CSS | M | 1h| 1hr | 1hr |
-| API Linking | H | 3hrs| ---- | ---- |
-| Appending JS to DOM | H | 3hrs| ---- | ---- |
-| Event Listeners | H | 3hrs| ---- | ---- |
-| Clearing the page function | H | 1hr| ---- | ---- |
-| Additional CSS | M | 3hrs| ---- | ---- |
-| Post MVPs | L | 5hrs| ---- | ---- |
-| Debugging | H | 11hrs| ---- | ---- |
-| Testing | M | 6hrs| ---- | ---- |
-| Research and Feedback | L | 4hrs| ---- | ---- |
+| Basic CSS | M | 1hr| 2hrs | 2hr |
+| API Linking | H | 3hrs| 3hrs | 3hrs |
+| Appending JS to DOM | H | 3hrs| 3hrs | 3hrs |
+| Event Listeners | H | 3hrs| 1hr | 1hr |
+| Clearing the page function | H | 1hr| 30m | 30m |
+| Additional CSS | M | 3hrs| 4hrs | 4hrs |
+| Post MVPs | L | 3hrs| 5hrs | 5hrs |
+| Debugging | H | 3hrs | 4hrs | 4hrs |
+| Testing | M | 3hrs| 3hrs | 3hrs |
+| Research and Feedback | L | 43hrs| 3hrs | 3hrs |
 | Total | H | 40hrs| ---- | ---- |
 
 ## Code Snippet 
+```
+.fade-in {
+  animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+```
 
 ## Change Log
  
