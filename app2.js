@@ -104,7 +104,7 @@ button.addEventListener('click',
         workInfo.innerHTML = `You work in ${whereWork} as a ${position} and make ${salary}.  Insurance? ${insurance}`
         document.querySelector('#info-box').append(`You work in ${whereWork} 
         Puesto de Trabajo: ${position} 
-        Salario Anual: ${salary} 
+        Salario Mensual: ${salary} 
         Tiene Seguranza? ${insurance}
         
         `)

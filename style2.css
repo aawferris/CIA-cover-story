@@ -1,4 +1,5 @@
-body {
+
+ body {
   font-family: 'Julius Sans One', sans-serif;
   display: flex;
   flex-direction: column;
@@ -28,6 +29,7 @@ header {
 #logo {
   max-width: auto;
   height: 100px;
+  margin-left: 7%;
 }
 
 ul {
@@ -36,7 +38,7 @@ ul {
   display: flex;
   align-items: center;
   order: 1;
-  margin-left: 60%;
+  margin-left: 55%;
 }
 
 a {
@@ -60,7 +62,7 @@ a:active {
   align-self: flex-start;
   margin: 0;
   position: absolute;
-  top: 40%;
+  top: 60%;
 }
 
 .container {
@@ -136,26 +138,16 @@ button {
 #info-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   width: 80%;
   height: 600px;
-  margin: 5px 10px;
+  margin: 15px 10px 10px 10px;
   white-space: pre-line;
 }
 
 footer {
-  height: 40px;
+  height: 60px;
 }
 
-/*  Sourced from: MDN */
-.fade-in {
-  animation: fadeIn ease 5s;
-}
-
-@keyframes fadeIn {
-  0% { opacity:0; }
-  100% { opacity:1; }
-}
 
 @media screen and (max-width: 1270px) {
   ul {
@@ -222,4 +214,16 @@ footer {
     align-content: center;
     /* border: 2px solid black; */
    }
+}
+
+
+
+/*  Sourced from: MDN */
+.fade-in {
+  animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
 }
