@@ -32,29 +32,29 @@ button.addEventListener('click',
         const birthPlace = document.createElement('p')
         let pob = response.data.person.personal.born_place
         birthPlace.innerHTML = `Place of Birth: ${pob}`
-        document.querySelector('#info-box').append(`Lugar de Nacimiento: ${pob}
+        document.querySelector('#info-box').append(`Lugar de nacimiento: ${pob}
         
         `)
 
         const currentLocation = document.createElement('p')
-        let currentCity = response.data.person.personal.city
+        // let currentCity = response.data.person.personal.city
         let currentCountry = response.data.person.personal.country
-        currentLocation.innerHTML = `Current Location: ${currentCity}, ${currentCountry}`
-        document.querySelector('#info-box').append(`Ubicación Actual: ${currentCity}, ${currentCountry}
+        currentLocation.innerHTML = `Current Location: ${currentCountry}`
+        document.querySelector('#info-box').append(`Ubicación actual: ${currentCountry}
         
         `)
 
         const fatherName = document.createElement('p')
         let dad = response.data.person.personal.father_name
         fatherName.innerHTML = `Father's Name: ${dad}`
-        document.querySelector('#info-box').append(`Nombre de Padre: ${dad}
+        document.querySelector('#info-box').append(`Nombre de padre: ${dad}
         
         `)
 
         const bloodType = document.createElement('p')
         let blood = response.data.person.personal.blood
         bloodType.innerHTML = `Blood Type: ${blood}`
-        document.querySelector('#info-box').append(`Grupo Sanguíneo: ${blood}
+        document.querySelector('#info-box').append(`Tipo sanguíneo: ${blood}
         
         `)
 
@@ -70,9 +70,9 @@ button.addEventListener('click',
         let spouse = response.data.person.marriage.spouse_name
         let children = response.data.person.marriage.children
         family.innerHTML = `Married? ${married} Spouse Name: ${spouse} Number of Children: ${children}`
-        document.querySelector('#info-box').append(`Casado? ${married}
-        Nombre de Esposo: ${spouse}
-        Número de Hijos: ${children}
+        document.querySelector('#info-box').append(`¿Casado? ${married}
+        Nombre de sposo: ${spouse}
+        Número de hijos: ${children}
         
         `)
 
@@ -89,8 +89,8 @@ button.addEventListener('click',
         let userName = response.data.person.online_info.username
         let password = response.data.person.online_info.password
         email.innerHTML = `Email Address: ${netMail} Username: ${userName} Password: ${password}`
-        document.querySelector('#info-box').append(`Correo Electrónico: ${netMail} 
-        Nombre de Usuario ${userName} 
+        document.querySelector('#info-box').append(`Correo electrónico: ${netMail} 
+        Usuario: ${userName} 
         Contraseña: ${password}
         
         `)
@@ -103,9 +103,9 @@ button.addEventListener('click',
 
         workInfo.innerHTML = `You work in ${whereWork} as a ${position} and make ${salary}.  Insurance? ${insurance}`
         document.querySelector('#info-box').append(`You work in ${whereWork} 
-        Puesto de Trabajo: ${position} 
-        Salario Mensual: ${salary} 
-        Tiene Seguranza? ${insurance}
+        Puesto: ${position} 
+        Salario mensual: ${salary} 
+        ¿Tiene seguranza? ${insurance}
         
         `)
       }
@@ -124,13 +124,15 @@ button.addEventListener('click',
         const myQuote = document.createElement('p')
         let quote = data
         myQuote.innerHTML = `${quote}`
-        document.querySelector('#info-box').append(`Ese dicho que simepre dices: "${quote}".`)
+        document.querySelector('#info-box').append(`Ese dicho que siempre dices: "${quote}".`)
 
       } catch (error) {
         console.log(`QUOTE Error::: ${error}`);
       }
     }
     getQuote()
+    showAvatar()
+    // fadeOnclick()
   })
 
 function removeInfo() {
@@ -139,3 +141,21 @@ function removeInfo() {
     removeDiv.removeChild(removeDiv.lastChild)
   }
 }
+
+function showAvatar() {
+  let avatar = document.getElementById("avatar")
+  if (avatar.style.display === "none") {
+    avatar.style.display = "none"
+  } else {
+    avatar.style.display = "flex"
+  }
+}
+
+// function fadeOnclick() {
+//   let infoBox = document.querySelector('#info-box')
+//   if (infoBox.style.display = "hidden") {
+//     avatar.style.display = "hidden"
+//   } else {
+//     avatar.style.display = "flex"
+//   }
+// }

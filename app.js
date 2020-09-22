@@ -37,10 +37,10 @@ button.addEventListener('click',
         `)
 
         const currentLocation = document.createElement('p')
-        let currentCity = response.data.person.personal.city
+        // let currentCity = response.data.person.personal.city
         let currentCountry = response.data.person.personal.country
-        currentLocation.innerHTML = `Current Location: ${currentCity}, ${currentCountry}`
-        document.querySelector('#info-box').append(`Current Location: ${currentCity}, ${currentCountry}
+        currentLocation.innerHTML = `Current Location: ${currentCountry}`
+        document.querySelector('#info-box').append(`Current Location: ${currentCountry}
         
         `)
 
@@ -88,7 +88,7 @@ button.addEventListener('click',
         let netMail = response.data.person.online_info.email
         let userName = response.data.person.online_info.username
         let password = response.data.person.online_info.password
-        email.innerHTML = `Email Address: ${netMail} and your username is Username: ${userName} and your password is Password: ${password}`
+        email.innerHTML = `Email Address: ${netMail} Username: ${userName} Password: ${password}`
         document.querySelector('#info-box').append(`Email Address: ${netMail} 
         Username is Username: ${userName} 
         Password is Password: ${password}
@@ -132,6 +132,7 @@ button.addEventListener('click',
     }
     getQuote()
     showAvatar()
+    // fadeOnclick()
   })
 
 function removeInfo() {
@@ -150,12 +151,11 @@ function showAvatar() {
   }
 }
 
-
-// function myFunction() {
-//   var x = document.getElementById("myDIV");
-//   if (x.style.display === "none") {
-//     x.style.display = "block";
+// function fadeOnclick() {
+//   let infoBox = document.querySelector('#info-box p')
+//   if (infoBox.style.display = "none") {
+//     avatar.style.display = "none"
 //   } else {
-//     x.style.display = "none";
+//     avatar.style.display = "flex"
 //   }
 // }
