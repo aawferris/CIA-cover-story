@@ -18,21 +18,21 @@ button.addEventListener('click',
         let firstName = response.data.person.personal.name
         let lastName = response.data.person.personal.last_name
         name.innerHTML = `Name: ${firstName, lastName}`
-        document.querySelector('#info-box').append(`Name: ${firstName}  ${lastName}
+        document.querySelector('#info-box').append(`Nombre: ${firstName}  ${lastName}
         
         `)
 
         const howOld = document.createElement('p')
         let age = response.data.person.personal.age
         howOld.innerHTML = `Age: ${age}`
-        document.querySelector('#info-box').append(`Age: ${age}
+        document.querySelector('#info-box').append(`Edad: ${age}
         
         `)
 
         const birthPlace = document.createElement('p')
         let pob = response.data.person.personal.born_place
         birthPlace.innerHTML = `Place of Birth: ${pob}`
-        document.querySelector('#info-box').append(`Place of Birth: ${pob}
+        document.querySelector('#info-box').append(`Lugar de Nacimiento: ${pob}
         
         `)
 
@@ -40,28 +40,28 @@ button.addEventListener('click',
         let currentCity = response.data.person.personal.city
         let currentCountry = response.data.person.personal.country
         currentLocation.innerHTML = `Current Location: ${currentCity}, ${currentCountry}`
-        document.querySelector('#info-box').append(`Current Location: ${currentCity}, ${currentCountry}
+        document.querySelector('#info-box').append(`Ubicación Actual: ${currentCity}, ${currentCountry}
         
         `)
 
         const fatherName = document.createElement('p')
         let dad = response.data.person.personal.father_name
         fatherName.innerHTML = `Father's Name: ${dad}`
-        document.querySelector('#info-box').append(`Father's Name: ${dad}
+        document.querySelector('#info-box').append(`Nombre de Padre: ${dad}
         
         `)
 
         const bloodType = document.createElement('p')
         let blood = response.data.person.personal.blood
         bloodType.innerHTML = `Blood Type: ${blood}`
-        document.querySelector('#info-box').append(`Blood Type: ${blood}
+        document.querySelector('#info-box').append(`Grupo Sanguíneo: ${blood}
         
         `)
 
         const religion = document.createElement('p')
         let dios = response.data.person.personal.religion
         religion.innerHTML = `Religion: ${dios}`
-        document.querySelector('#info-box').append(`Religion: ${dios}
+        document.querySelector('#info-box').append(`Religión: ${dios}
         
         `)
 
@@ -70,9 +70,9 @@ button.addEventListener('click',
         let spouse = response.data.person.marriage.spouse_name
         let children = response.data.person.marriage.children
         family.innerHTML = `Married? ${married} Spouse Name: ${spouse} Number of Children: ${children}`
-        document.querySelector('#info-box').append(`Married? ${married}
-        Spouse Name: ${spouse}
-        Number of Children: ${children}
+        document.querySelector('#info-box').append(`Casado? ${married}
+        Nombre de Esposo: ${spouse}
+        Número de Hijos: ${children}
         
         `)
 
@@ -80,7 +80,7 @@ button.addEventListener('click',
         let cert = response.data.person.education.certificate
         let uni = response.data.person.education.university
         education.innerHTML = `Education: ${cert} from ${uni}`
-        document.querySelector('#info-box').append(`Education: ${cert} from ${uni}
+        document.querySelector('#info-box').append(`Preparación: ${cert} de ${uni}
         
         `)
 
@@ -88,10 +88,10 @@ button.addEventListener('click',
         let netMail = response.data.person.online_info.email
         let userName = response.data.person.online_info.username
         let password = response.data.person.online_info.password
-        email.innerHTML = `Email Address: ${netMail} and your username is Username: ${userName} and your password is Password: ${password}`
-        document.querySelector('#info-box').append(`Email Address: ${netMail} 
-        Username is Username: ${userName} 
-        Password is Password: ${password}
+        email.innerHTML = `Email Address: ${netMail} Username: ${userName} Password: ${password}`
+        document.querySelector('#info-box').append(`Correo Electrónico: ${netMail} 
+        Nombre de Usuario ${userName} 
+        Contraseña: ${password}
         
         `)
 
@@ -103,9 +103,9 @@ button.addEventListener('click',
 
         workInfo.innerHTML = `You work in ${whereWork} as a ${position} and make ${salary}.  Insurance? ${insurance}`
         document.querySelector('#info-box').append(`You work in ${whereWork} 
-        Position: ${position} 
-        Annual Salary: ${salary} 
-        Insurance? ${insurance}
+        Puesto de Trabajo: ${position} 
+        Salario Anual: ${salary} 
+        Tiene Seguranza? ${insurance}
         
         `)
       }
@@ -124,7 +124,7 @@ button.addEventListener('click',
         const myQuote = document.createElement('p')
         let quote = data
         myQuote.innerHTML = `${quote}`
-        document.querySelector('#info-box').append(`That one quote your known for is: "${quote}".`)
+        document.querySelector('#info-box').append(`Ese dicho que simepre dices: "${quote}".`)
 
       } catch (error) {
         console.log(`QUOTE Error::: ${error}`);
