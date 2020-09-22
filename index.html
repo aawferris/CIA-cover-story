@@ -17,7 +17,8 @@
     <nav id="nav-bar">
       <ul>
         <li id="display-home"><a href="https://www.cia.gov/index.html">Home</a></li>
-        <li id="resources"><a href="https://www.google.com/">Resources</a></li>
+        <li id="resources"><a href="https://www.google.com/">Intelligence</a></li>
+        <li id="resources"><a href="https://www.addictinggames.com/action/spy">Training</a></li>
         <li id="spies"><a href="./index.html">English</a></li>
         <li id="espias"><a href="./index2.html">Español</a></li>
       </ul>
@@ -34,18 +35,33 @@
       <h1>CIA Cover Story Generator</h1>
       <p id="header-p">Finally, a cover story generator for spies</p>
     </div>
-    <div class="container" id="button-div">
-      <button class="pulseBtn">MAKE MY COVER</button>
-    </div>
+    <button class="pulseBtn" onclick="showAvatar">MAKE MY COVER</button>
   </header>
 
-  <section class="fade-in" class="container" id="info-container">
-    <div id="photo-avatar">
-      <img id="avatar" src="./blank-avatar.png" alt="blank image avatar">
+  <div class="fade-in" class="container" id="info-big-container">
+    <section class="fade-in" class="container" id="info-container">
+      <!-- <div id="photo-avatar">
+        <img id="avatar" src="./blank-avatar.png" alt="blank image avatar">
+      </div> -->
+      <div class="container" id="button-div">
+
+        <div id="photo-avatar">
+          <img id="avatar" src="./blank-avatar.png" alt="blank image avatar">
+        </div>
+      </div>
+      <div class="container" id="info-box">
+        <!-- THIS IS WHERE I WILL APPEND -->
+      </div>
+    </section>
+  </div>
+
+  <section class="fade-in" class="container" id="spy-vid">
+    <div class="fade-in" class="container" id="titleholder">
+      <h2>Interested in Becoming a Spy?</h2>
     </div>
-    <div class="container" id="info-box">
-      <!-- THIS IS WHERE I WILL APPEND -->
-    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h8FtstMvYH4" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
   </section>
 
   <footer></footer>

@@ -131,6 +131,7 @@ button.addEventListener('click',
       }
     }
     getQuote()
+    showAvatar()
   })
 
 function removeInfo() {
@@ -139,3 +140,22 @@ function removeInfo() {
     removeDiv.removeChild(removeDiv.lastChild)
   }
 }
+
+function showAvatar() {
+  let avatar = document.getElementById("avatar")
+  if (avatar.style.display === "none") {
+    avatar.style.display = "none"
+  } else {
+    avatar.style.display = "flex"
+  }
+}
+
+
+// function myFunction() {
+//   var x = document.getElementById("myDIV");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   } else {
+//     x.style.display = "none";
+//   }
+// }
