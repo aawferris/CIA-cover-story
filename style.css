@@ -13,7 +13,6 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: auto;
 }
 
 #nav-bar {
@@ -45,6 +44,14 @@ a {
   margin: 10px;
   border: 6px;
   /* border: 2px solid red */
+}
+
+a:hover {
+  color: #d3bcbc
+}
+
+a:active {
+  color: #ff7f50;
 }
 
 .container {
@@ -96,10 +103,6 @@ button {
   background-color: #d3d3d36b;
 }
 
-#photo-avatar {
-  /* border: 2px solid black; */
-}
-
 #avatar {
   max-width: 100px;
   height: auto;
@@ -109,7 +112,23 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 100%;
+  width: 80%;
+  height: 600px;
   margin: 5px 10px;
   white-space: pre-line;
 }
+
+/*  SOurced from: https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08 */
+.fade-in {
+  animation: fadeIn ease 5s;
+  
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
