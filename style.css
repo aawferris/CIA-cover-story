@@ -226,6 +226,7 @@ footer {
    #info-container,
    #info-box,
    .container,
+   #spy-vid,
    footer {
      display: flex;
      flex-direction: column;
@@ -256,6 +257,14 @@ footer {
     margin: 0;
     align-content: center;
     /* border: 2px solid black; */
+   }
+
+   iframe {
+     width: 350px;
+   }
+
+   #spy-vid {
+     height: 50px;
    }
 }
 
