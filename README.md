@@ -136,5 +136,22 @@ Link to visual Priority Matrix: https://www.figma.com/file/SDlWBpKytroJ4Vuc5YTa4
 }
 ```
 
+```
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="https://www.cia.gov/index.html">Home</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Central_Intelligence_Agency">About Us</a></li>
+        <li><a href="https://www.google.com/">Intelligence</a></li>
+        <li><a href="https://www.addictinggames.com/action/spy">Training</a></li>
+        <select name="lang-list" id="lang-list" onchange="window.location=this.value">
+          <option value="blank">Language</option>
+          <option value="./index.html">English</option>
+          <option value="./indexES.html">Español</option>
+          <option value="./indexAR.html">عربى</option>
+        </select>
+      </ul>
+```
+
+
 ## Change Log
  
