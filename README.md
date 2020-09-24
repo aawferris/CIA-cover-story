@@ -121,8 +121,10 @@ Link to visual Priority Matrix: https://www.figma.com/file/SDlWBpKytroJ4Vuc5YTa4
 | Post MVPs | L | 3hrs| 5hrs | 5hrs |
 | Debugging | H | 3hrs | 4hrs | 4hrs |
 | Testing | M | 3hrs| 3hrs | 3hrs |
-| Research and Feedback | L | 43hrs| 3hrs | 3hrs |
-| Total | H | 40hrs| ---- | ---- |
+| Research and Feedback | L | 3hrs| 3hrs | 3hrs |
+| Adavnaced Styling | L | 3hrs| 5hrs | 5hrs |
+| Language Support| L | 1hr| 1hr | 1hr |
+| Total | H | 40hrs| 30hrs | 30hrs |
 
 ## Code Snippet 
 ```
