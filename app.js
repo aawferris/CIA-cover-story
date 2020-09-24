@@ -1,6 +1,6 @@
 // global scope // 
 const button = document.querySelector('button')
-const personDisplay = document.querySelector('#info-box') // storing his id as a var
+const personDisplay = document.querySelector('#info-box')
 const personUrl = 'https://pipl.ir/v1/getPerson?0x0A5CC1C69997CEF6'
 const quoteUrl = 'https://api.adviceslip.com/advice'
 
@@ -9,9 +9,7 @@ button.addEventListener('click',
     removeInfo()
     try {
       const response = await axios.get(personUrl)
-      // console.log(response.data.person);
       const data = Object.keys(response.data.person.personal)
-      // console.log(data);
 
       function personalInfo() {
         const name = document.createElement('p')
@@ -37,7 +35,6 @@ button.addEventListener('click',
         `)
 
         const currentLocation = document.createElement('p')
-        // let currentCity = response.data.person.personal.city
         let currentCountry = response.data.person.personal.country
         currentLocation.innerHTML = `Current Location: ${currentCountry}`
         document.querySelector('#info-box').append(`Current Location: ${currentCountry}
@@ -117,9 +114,7 @@ button.addEventListener('click',
     async function getQuote() {
       try {
         const response = await axios.get(quoteUrl)
-        // console.log(response);
         const data = response.data.slip.advice
-        // console.log(data);
 
         const myQuote = document.createElement('p')
         let quote = data
@@ -132,7 +127,6 @@ button.addEventListener('click',
     }
     getQuote()
     showAvatar()
-    // fadeOnclick()
   })
 
 function removeInfo() {
@@ -150,12 +144,3 @@ function showAvatar() {
     avatar.style.display = "flex"
   }
 }
-
-// function fadeOnclick() {
-//   let infoBox = document.querySelector('#info-box p')
-//   if (infoBox.style.display = "none") {
-//     avatar.style.display = "none"
-//   } else {
-//     avatar.style.display = "flex"
-//   }
-// }
