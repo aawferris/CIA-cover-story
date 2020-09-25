@@ -3,6 +3,7 @@
 ## Project Name
 
 CIA Cover Story
+Link to Deployment: https://aawferris.github.io/CIA-cover-story/index.html 
 
 ## Project Description
 
