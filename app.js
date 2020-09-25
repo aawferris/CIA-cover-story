@@ -4,21 +4,22 @@ const personDisplay = document.querySelector('#info-box')
 const personUrl = 'https://pipl.ir/v1/getPerson?0x0A5CC1C69997CEF6'
 const quoteUrl = 'https://api.adviceslip.com/advice'
 
-button.addEventListener('click',
-  async function getData() {
-    removeInfo()
+// MAIN FUNCTION 
+button.addEventListener('click', // Set up an event listener for button click that executes a function that grabs and appends API data
+  async function getData() { // async to await server data
+    removeInfo() // call a function that removes previous entries upon button click
     try {
       const response = await axios.get(personUrl)
-      const data = Object.keys(response.data.person.personal)
+      const data = Object.keys(response.data.person.personal) // saves data from API as a var
 
       function personalInfo() {
-        const name = document.createElement('p')
-        let firstName = response.data.person.personal.name
-        let lastName = response.data.person.personal.last_name
-        name.innerHTML = `Name: ${firstName, lastName}`
-        document.querySelector('#info-box').append(`Name: ${firstName}  ${lastName}
+        const name = document.createElement('p')  // creates a new p tag in DOM
+        let firstName = response.data.person.personal.name // saves API data as var
+        let lastName = response.data.person.personal.last_name // saves API data as var
+        name.innerHTML = `Name: ${firstName, lastName}` // adds info onto DOM
+        document.querySelector('#info-box').append(`Name: ${firstName}  ${lastName} 
         
-        `)
+        `) //appends the API data as an interpolated string on the web page
 
         const howOld = document.createElement('p')
         let age = response.data.person.personal.age
@@ -106,12 +107,12 @@ button.addEventListener('click',
         
         `)
       }
-      personalInfo()
-    } catch (error) {
+      personalInfo() // calls the main function inside the button click
+    } catch (error) { // error reporting for dev tools
       console.log(`Error::: ${error}`);
     }
 
-    async function getQuote() {
+    async function getQuote() { // function to grab random quote from second API within button click
       try {
         const response = await axios.get(quoteUrl)
         const data = response.data.slip.advice
@@ -126,21 +127,21 @@ button.addEventListener('click',
       }
     }
     getQuote()
-    showAvatar()
+    showAvatar()  // calls avatar function
   })
 
-function removeInfo() {
-  const removeDiv = document.querySelector('#info-box')
-  while (removeDiv.lastChild) {
+function removeInfo() { // function to remove previous data (called within button click)
+  const removeDiv = document.querySelector('#info-box') // removes the data from this place in the DOM
+  while (removeDiv.lastChild) { // while loop to remove the last child of the div from DOM 
     removeDiv.removeChild(removeDiv.lastChild)
   }
 }
 
-function showAvatar() {
+function showAvatar() { // function to toggle appearance of avatar image upon button click
   let avatar = document.getElementById("avatar")
-  if (avatar.style.display === "none") {
+  if (avatar.style.display === "none") { // when the CSS is set to display: none
     avatar.style.display = "none"
   } else {
-    avatar.style.display = "flex"
+    avatar.style.display = "flex" // changes the display to display: flex
   }
 }
