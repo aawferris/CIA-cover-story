@@ -1,10 +1,10 @@
- body {
+ /* sets the body as one flexbox */
+ body { 
   font-family: 'Julius Sans One', sans-serif;
   display: flex;
   flex-direction: column;
   width: 99%;
  }
-
 
 header {
   margin: auto;
@@ -45,6 +45,7 @@ a {
   font-size: 15px;
 }
 
+ /* psuedo to change colors on hover and press down */
 a:hover {
   color: #d3bcbc
 }
@@ -60,6 +61,7 @@ a:active {
   top: 40%;
 }
 
+ /* This class is attributed to all containers for general styling  */
 .container {
   display: flex;
   align-items: center;
@@ -91,6 +93,7 @@ button {
   font-size: 14px;
   font-weight: 400;
 
+   /* Makes the button pulse */
   /* Animation sourced from https://emilkowalski.github.io/css-effects-snippets/ */
   padding: 12px 24px;
   background-color: hsl(222, 100%, 95%);
@@ -110,7 +113,7 @@ button {
   display: flex;
   justify-content: center;
   background: rgb(36,56,97);
-  background: linear-gradient(0deg, rgba(36,56,97,0.6404936974789917) 0%, rgba(36,56,97,0.31556372549019607) 40%, rgba(36,56,97,0) 100%);
+  background: linear-gradient(0deg, rgba(36,56,97,0.6404936974789917) 0%, rgba(36,56,97,0.31556372549019607) 40%, rgba(36,56,97,0) 100%);  /* gradient effect */
 }
 
 #info-container {
@@ -170,7 +173,7 @@ footer {
   height: 60px;
 }
 
-
+ /* media queries */
 @media screen and (max-width: 1270px) {
   ul {
     display: flex;
@@ -245,7 +248,7 @@ footer {
    }
 }
 
-/*  Inspired from: MDN */
+/* Fade in effect - Inspired from: MDN */
 .fade-in {
   animation: fadeIn ease 5s;
 }
