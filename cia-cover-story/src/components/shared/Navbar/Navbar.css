@@ -7,27 +7,13 @@
   height: 8vh;
 }
 
-#nav-elements {
+#basic-navbar-nav {
   display: flex;
-}
-
-.nav-item {
-  padding: 15px;
+  justify-content: space-between;
 }
 
 .nav-link {
-  color: gold;
   text-decoration: none;
-}
-
-#dropdown-container {
-  margin-right: 10%;
-}
-
-#dropdown-item-button {
-  border: none;
-  outline: none;
-  background-color: #120064;
   color: gold;
-  font-size: 15px;
+  padding: 10px;
 }
