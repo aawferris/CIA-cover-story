@@ -1,6 +1,7 @@
+
 import React from 'react';
 
-function Navbar(props) {
+function Nav(props) {
   return (
     <>
       <nav id="nav-bar">
@@ -21,4 +22,4 @@ function Navbar(props) {
   );
 }
 
-export default Navbar;
+export default Nav;

@@ -1,18 +1,15 @@
 import React from "react";
-import { Route } from "react-router-dom";
 import "./App.css";
 
-import Homepage from "./Homepage";
-import Navbar from "./Navbar";
+import Homepage from "./components/Homepage/Homepage";
+import Layout from "./components/shared/Layout/Layout";
 
 function App() {
   return (
     <div className="App">
-      <h1>This renders</h1>
-      <Navbar />
-      <Route exact path="/">
+      <Layout>
         <Homepage />
-      </Route>
+      </Layout>
     </div>
   );
 }

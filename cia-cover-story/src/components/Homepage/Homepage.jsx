@@ -1,6 +1,6 @@
 import React from 'react';
 
-import RandomPerson from './RandomPerson'
+import RandomPerson from "../../RandomPerson/RandomPerson"
 
 function Homepage(props) {
   return (
