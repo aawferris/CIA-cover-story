@@ -1,0 +1,33 @@
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #120064;
+  color: gold;
+  height: 8vh;
+}
+
+#nav-elements {
+  display: flex;
+}
+
+.nav-item {
+  padding: 15px;
+}
+
+.nav-link {
+  color: gold;
+  text-decoration: none;
+}
+
+#dropdown-container {
+  margin-right: 10%;
+}
+
+#dropdown-item-button {
+  border: none;
+  outline: none;
+  background-color: #120064;
+  color: gold;
+  font-size: 15px;
+}

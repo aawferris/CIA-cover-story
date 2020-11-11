@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
-import Nav from "../Nav/Nav"
+import Navbar from "../Navbar/Navbar"
 
 import "./Layout.css";
 
@@ -10,7 +10,7 @@ function Layout(props) {
   return (
     <div id="layout">
       <Header />
-      <Nav />
+      <Navbar />
       <div className="layout-children">{props.children}</div>
       <Footer />
     </div>

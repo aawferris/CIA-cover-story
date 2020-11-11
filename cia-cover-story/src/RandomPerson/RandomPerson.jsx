@@ -17,7 +17,7 @@ function RandomPerson(props) {
 
   useEffect(() => {
     async function apiCall() {
-      const url = 'https://cors-anywhere.herokuapp.com/https://pipl.ir/v1/getPerson?0x0A5CC1C69997CEF6'
+      const url = 'https://pipl.ir/v1/getPerson?0x0A5CC1C69997CEF6'
       const response = await Axios.get(url)
       const data = (response.data.person)
       console.log(data)
